@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .header,
 .footer {
   display: flex;
@@ -21,7 +25,6 @@
 .header__logo-text,
 .footer__text {
   color: #fff;
-  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.06781rem;
@@ -45,7 +48,117 @@
 
 .card__image {
   border-radius: 0.3125rem;
-  width: 7.8125rem;
-  height: 10.5rem;
+  width: 12rem;
+  height: auto;
   object-fit: cover;
+}
+
+.find-place {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.country {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.card__location {
+  text-transform: uppercase;
+  color: #2b283a;
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: 0.10881rem;
+}
+
+.card__link {
+  color: #918e9b;
+  font-size: 1rem;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.card__title {
+  margin-top: 0.25rem;
+  color: #2b283a;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.card__dates {
+  margin-top: 1.06rem;
+  color: #2b283a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card__description {
+  margin-top: 0.56rem;
+  color: #2b283a;
+  font-size: 1rem;
+  line-height: 150%; /* 0.96rem */
+}
+
+@media (max-width: 540px) {
+  .card {
+    flex-direction: column;
+  }
+  .card__image {
+    width: 100%;
+    height: auto;
+  }
+  .card__link,
+  .card__location,
+  .card__description,
+  .card__dates {
+    font-size: 0.875rem;
+  }
+  .card__title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__content {
+    gap: 4rem;
+  }
+  .card {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .card__image {
+    width: 100%;
+  }
+  .card__link,
+  .card__location,
+  .card__description,
+  .card__dates {
+    font-size: 1.5rem;
+  }
+  .card__title {
+    font-size: 3rem;
+  }
+  .find-place {
+    gap: 1.5rem;
+  }
+  .country {
+    gap: 0.75rem;
+  }
+  .location-icon {
+    width: 1rem;
+  }
+  .header__logo-text,
+  .footer__text {
+    font-size: 2rem;
+  }
+  .header__logo-img {
+    width: 2rem;
+  }
 }

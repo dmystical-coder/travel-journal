@@ -9,15 +9,15 @@ const Card = ({ card }) => {
             <div className="card__content">
                 <div className="find-place">
                     <p className="country">
-                        <img src={Location} alt="" />
+                        <img className="location-icon" src={Location} alt="Location icon" />
                         <span className="card__location">{location}</span>
                     </p>
-                    <a className="card__link" href={googleMapsUrl}>Open in Google Maps</a>
+                    <a className="card__link" href={googleMapsUrl}>View on Google Maps</a>
                 </div>
                 <h2 className="card__title">{title}</h2>
+                <p className="card__dates">{startDate} - {endDate}</p>
                 <p className="card__description">{description}</p>
 
-                <p className="card__dates">Dates: {startDate} - {endDate}</p>
 
             </div>
         </div>
