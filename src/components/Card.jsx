@@ -1,5 +1,5 @@
 import Location from '/assets/location.svg'
-
+import PropTypes from 'prop-types'
 
 const Card = ({ card }) => {
     const { title, description, imageUrl, location, googleMapsUrl, startDate, endDate } = card
@@ -17,11 +17,21 @@ const Card = ({ card }) => {
                 <h2 className="card__title">{title}</h2>
                 <p className="card__dates">{startDate} - {endDate}</p>
                 <p className="card__description">{description}</p>
-
-
             </div>
         </div>
     )
+}
+
+Card.propTypes = {
+    card: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        imageUrl: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+        googleMapsUrl: PropTypes.string.isRequired,
+        startDate: PropTypes.string.isRequired,
+        endDate: PropTypes.string.isRequired,
+    }).isRequired
 }
 
 export default Card
