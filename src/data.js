@@ -28,5 +28,25 @@ export default [
         endDate: "18 Nov, 2024",
         description: "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
         imageUrl: "https://scrimba.com/links/travel-journal-norway-image-url"
+    },
+    {
+        id: 4,
+        title: "Kyoto",
+        location: "Japan",
+        googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
+        startDate: "5 Apr, 2024",
+        endDate: "15 Apr, 2024",
+        description: "Kyoto is a serene city known for its historical temples, beautiful cherry blossoms in spring, and traditional tea houses. It captures the essence of Japanese culture and blends it with scenic natural landscapes, making it a tranquil destination for visitors.",
+        imageUrl: "/assets/kyoto.jpg"
+    },
+    {
+        id: 5,
+        title: "Santorini",
+        location: "Greece",
+        googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
+        startDate: "01 Jun, 2024",
+        endDate: "10 Jun, 2024",
+        description: "Santorini offers iconic white-washed architecture, vibrant blue-domed churches, and breathtaking sunsets over the Aegean Sea. The island's unique beaches, wine culture, and volcanic landscape make it a top choice for a romantic getaway.",
+        imageUrl: "/assets/santorini.jpg"
     }
 ]
